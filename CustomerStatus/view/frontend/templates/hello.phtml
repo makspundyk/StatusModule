@@ -1,0 +1,19 @@
+<?php
+?>
+<div data-bind="scope: 'status'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "status": {
+                        "component": "IdeaInYou_CustomerStatus/js/statusForm",
+                        "template" : "IdeaInYou_CustomerStatus/formTemplate"
+                    }
+                }
+            }
+        }
+    }
+</script>

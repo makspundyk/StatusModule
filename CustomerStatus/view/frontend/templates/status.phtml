@@ -1,0 +1,8 @@
+<?php
+/** @var \IdeaInYou\CustomerStatus\Helper\GetCustomerStatus $customerHelper */
+$customerHelper = $this->helper(IdeaInYou\CustomerStatus\Helper\GetCustomerStatus::class);
+$status = $customerHelper->getCustomerStatus();
+?>
+<?php if ($status) : ?>
+    <li><p id="customer-status"><?= $status ?></p></li>
+<?php endif; ?>
